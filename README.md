@@ -1,11 +1,11 @@
 # Depoloying docker image we have already created in [this repo](https://github.com/fatihbe25/project_todo) to 3 nodes kubernetes cluster.
 
-## ingredients: 
-    ## [docker image](https://hub.docker.com/r/fatihbe25/project_todo_web) 
-    ## kubectl => tool to create and configure kubernetes cluster (pods,service,ingress) 
-       ## deployment.yaml => a configuration file to define kubernetes pods, container image , replicas 
-       ## service.yaml  => a configuration file to define service (loadbalancer) to access pods
-       ## ingress.yaml  => a configuration file to create an ingress (nginx proxy server)
+Ingredients: 
+   * [docker image](https://hub.docker.com/r/fatihbe25/project_todo_web) 
+   * kubectl => tool to create and configure kubernetes cluster (pods,service,ingress) 
+   * deployment.yaml => a configuration file to define kubernetes pods, container image , replicas 
+   * service.yaml  => a configuration file to define service (loadbalancer) to access pods
+   * ingress.yaml  => a configuration file to create an ingress (nginx proxy server)
     
    
   ###### I've used Digital Ocean so to create a kubernetes cluster in DO, use doctl. "kubex" is the name of cluster. 
