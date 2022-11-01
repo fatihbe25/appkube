@@ -33,52 +33,43 @@
   
   ```
   
-  To create 3-replicas of pods we will use deployement.yaml file  
   
-   ```
+  * To create 3-replicas of pods we will use deployement.yaml file  
+  
    
+   ```
    kubectl apply -f deployment.yaml 
-      
    ```
    
-   Then check pods, 
+   * Then check pods, 
    
-    ```
-    
-    kubectl get pods 
-    
-    ```
+   ```
+   kubectl get pods 
+   ```
    
-    And create loadbalancer service using service.yaml file. 
+   * And create loadbalancer service using service.yaml file. 
     
-    ```
-    
-    kubectl apply -f service.yaml
-    
-    ```
+   ```
+   kubectl apply -f service.yaml
+   ```
   
-    Then check service status, 
-    ```
-    
-    kubectl get service 
-    
-    ```
+   * Then check service status, 
+   
+   ```
+   kubectl get service 
+   ```
   
-    Fimally using ingress.yaml file, we will create a reverse proxy to our service
+   * Fimally using ingress.yaml file, we will create a reverse proxy to our service
     
-    ```
-    
-    kubectl apply -f ingress.yaml
-    
-    ```
+   ```
+   kubectl apply -f ingress.yaml
+   ```
   
-    Then check ingress, 
+   * Then check ingress, 
     
-    ```
-    
-    kubectl describe ingress ingress_x
-    
-    ```
+   ```
+   kubectl describe ingress ingress_x
+   ```
     
   
   
