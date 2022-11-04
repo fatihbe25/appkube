@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: nginx-app-deployment
+    namespace: fatihbe
     labels:
         app: nginx-app
 spec:
@@ -18,4 +19,4 @@ spec:
             - name: nginx-app-container
               image: fatihbe25/project_todo_web
               ports:
-              - containerPort: 8080
+              - containerPort: 80

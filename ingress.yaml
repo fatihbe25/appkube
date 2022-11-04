@@ -2,10 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-for-nginx-service
+  namespace: fatihbe
 spec:
-  ingressClassName: nginx
   rules:
-  - host: "fatihbe-dart.fria.io"
+  - host: fatihbe-dart.fria.io
     http:
       paths:
       - pathType: Prefix
@@ -14,4 +14,4 @@ spec:
           service:
             name: nginx-app-service
             port:
-              number: 8080
+              number: 80
